@@ -83,7 +83,7 @@ export default function EditCourseModal({
 
         seats: course.seats,
 
-        coordinator: course.coordinator,
+        coordinator: course.coordinator?._id ?? "",
 
         isActive: course.isActive,
       });

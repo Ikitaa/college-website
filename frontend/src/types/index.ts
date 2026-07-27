@@ -102,7 +102,11 @@ export interface Course {
 
   seats: number;
 
-  coordinator: string;
+  coordinator?: {
+  _id: string;
+  name: string;
+  designation?: string;
+};
 
   isActive: boolean;
 }
