@@ -1,39 +1,13 @@
 import { useEffect, useState } from "react";
 import { Search, Plus, Pencil, Trash2 } from "lucide-react";
 import toast from "react-hot-toast";
+import type { Course } from "../../types";
 
 import { api, getErrorMessage } from "../../lib/api";
 
 import AddCourseModal from "./AddCourseModal";
 import EditCourseModal from "./EditCourseModal";
 
-interface Course {
-  _id: string;
-
-  title: string;
-  code: string;
-  faculty: string;
-
-  durationYears: number;
-  totalSemesters: number;
-  totalCredits: number;
-
-  description: string;
-  eligibility: string;
-
-  fees: string;
-  scholarship: string;
-  careerOpportunities: string;
-
-  medium: string;
-  intake: string;
-
-  curriculumUrl?: string;
-
-  seats?: number;
-
-  isActive: boolean;
-}
 
 export default function CoursesPage() {
   const [courses, setCourses] = useState<Course[]>([]);

@@ -1,42 +1,7 @@
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { api, getErrorMessage } from "../../lib/api";
-
-interface Course {
-  _id: string;
-
-  title: string;
-  code: string;
-  faculty: string;
-
-  description: string;
-
-  durationYears: number;
-  totalSemesters: number;
-  totalCredits: number;
-
-  eligibility: string;
-
-  admissionFee: number;
-  semesterFee: number;
-  yearlyFee: number;
-  totalFee: number;
-  examFee: string;
-
-  scholarship: string;
-  careerOpportunities: string;
-
-  curriculumUrl: string;
-
-  medium: string;
-  intake: string;
-
-  seats: number;
-
-  coordinator: string;
-
-  isActive: boolean;
-}
+import type { Course } from "../../types";
 
 interface Props {
   isOpen: boolean;

@@ -73,14 +73,37 @@ export interface Notice {
 
 export interface Course {
   _id: string;
+
   title: string;
   code: string;
   faculty: string;
-  durationYears: number;
+
   description: string;
+
+  durationYears: number;
+  totalSemesters: number;
+  totalCredits: number;
+
   eligibility: string;
-  seats?: number;
-  coordinator?: { _id: string; name: string; designation?: string };
+
+  admissionFee: number;
+  semesterFee: number;
+  yearlyFee: number;
+  totalFee: number;
+  examFee: string;
+
+  scholarship: string;
+  careerOpportunities: string;
+
+  curriculumUrl: string;
+
+  medium: string;
+  intake: string;
+
+  seats: number;
+
+  coordinator: string;
+
   isActive: boolean;
 }
 

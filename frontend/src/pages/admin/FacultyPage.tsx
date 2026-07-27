@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Search, Pencil, Trash2 } from "lucide-react";
-import toast from "react-hot-toast";
-
-import { api, getErrorMessage } from "../../lib/api";
+import { api } from "../../lib/api";
 
 interface Faculty {
   _id: string;
