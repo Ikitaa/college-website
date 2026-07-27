@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon-50: #fbf1f2;
+  --color-maroon-100: #f3dde0;
+  --color-maroon-400: #a8434f;
+  --color-maroon-500: #7a1f2b;
+  --color-maroon-600: #631824;
+  --color-maroon-700: #4d121c;
+  --color-maroon-900: #2e0a10;
+
+  --color-cream-50: #fefdfb;
+  --color-cream-100: #faf6ee;
+  --color-cream-200: #f3ecdd;
+
+  --color-ink-900: #1f1b16;
+  --color-ink-700: #3a332b;
+  --color-ink-500: #5c5347;
+
+  --color-gold-400: #d9a948;
+  --color-gold-500: #c68f2e;
+  --color-gold-600: #a3741f;
+
+  --color-sage-500: #5c7a5c;
+  --color-sage-600: #4a6349;
+
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-cream-100);
+  color: var(--color-ink-900);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold-500);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
