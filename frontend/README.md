@@ -1,89 +1,140 @@
 # College Website Management System
 
-A full-stack College Website Management System built using React, TypeScript, Node.js, Express, and MongoDB.
+A full-stack College Website Management System developed using React, TypeScript, Node.js, Express, and MongoDB. The system provides an online platform for managing college information, courses, faculty, notices, admissions, galleries, and user authentication through an administrative dashboard.
 
-## Technologies
+---
 
-Frontend
+## Technologies Used
+
+### Frontend
 - React
 - TypeScript
 - Vite
 - Tailwind CSS
+- Axios
+- React Router
+- React Hot Toast
 
-Backend
+### Backend
 - Node.js
-- Express
+- Express.js
 - MongoDB
 - Mongoose
 - JWT Authentication
+- bcryptjs
+
+---
+
+## Features
+
+- Admin Authentication
+- Admin Dashboard
+- Teacher Management
+- Student Registration
+- Course Management
+- Department Management
+- Notice Management
+- Gallery Management
+- Admission Management
+- Site Settings Management
+- Responsive User Interface
+
+---
 
 ## Installation
 
-### Clone repository
+### 1. Clone the Repository
 
 ```bash
 git clone <repository-url>
 cd college-website
 ```
 
-### Backend
+---
+
+## Backend Setup
 
 ```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file:
+Create a `.env` file inside the **backend** folder:
 
 ```env
 PORT=5000
 MONGO_URI=YOUR_MONGODB_URI
-JWT_SECRET=YOUR_SECRET
+JWT_SECRET=YOUR_SECRET_KEY
 CLIENT_URL=http://localhost:5173
 COOKIE_SECURE=false
 ```
 
-Run backend:
+Run the backend:
 
 ```bash
 npm run dev
 ```
 
-### Frontend
+---
+
+## Frontend Setup
 
 ```bash
 cd frontend
 npm install
 ```
 
-Create `.env`
+Create a `.env` file inside the **frontend** folder:
 
 ```env
 VITE_API_URL=http://localhost:5000/api
 ```
 
-Run frontend:
+Run the frontend:
 
 ```bash
 npm run dev
 ```
 
-## Features
+---
 
-- Admin Dashboard
-- Teacher Management
-- Student Registration
-- Course Management
-- Notices
-- Gallery
-- Admissions
-- Authentication
-- Responsive Design
+## Project Structure
+
+```
+college-website/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── ...
+│
+├── backend/
+│   ├── src/
+│   ├── models/
+│   ├── controllers/
+│   ├── routes/
+│   └── ...
+│
+└── README.md
+```
+
+---
 
 ## Login
 
-Create an admin account using the backend seed or insert one into MongoDB.
+Create an administrator account using the backend startup seed or insert an admin user directly into MongoDB before logging in.
+
+---
+
+## Notes
+
+- MongoDB must be running locally or connected through MongoDB Atlas.
+- The repository contains only the application source code. Database contents are not included.
+
+---
 
 ## Author
 
-Ikita Shrestha
+**Ikita Shrestha**
+
+Bachelor of Computer Applications (BCA)
